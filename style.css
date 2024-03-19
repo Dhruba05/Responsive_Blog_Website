@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+ /* 1rem=16px */
+ /* 1rem=10px */
+
+
+
+ 
+@media  only screen and (min-width:321px) and (max-width:768px) {
+    
+    html{
+        margin: 6px;
+        padding: 2px;
+        font-size: 38%;
+    }
+    /* .v_card{
+        display: flex;
+        flex-grow: inherit;
+    } */
+
+
+    nav {
+        flex-direction: row; /* Stack navigation items vertically */
+        align-items: center; /* Center align navigation items */
+        padding: 0.5rem; /* Adjust padding for smaller screens */
+    }
+
+    nav ul li {
+        font-size: 1.4rem; /* Adjust font size for smaller screens */
+    }
+
+    .hero_content h1 {
+        font-size: 4rem; /* Adjust font size for smaller screens */
+    }
+    .hero_content h4{
+        font-size: 2rem;
+        padding-left: 12px;
+    }
+    #hero{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .hero_content h4 {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+    }
+
+    .h_card, .v_card {
+        flex-direction: row; /* Stack card content vertically */
+        align-items: center; /* Center align card content */
+    }
+
+    .h_card img, .v_card img {
+        height: 120px; /* Adjust image height for smaller screens */
+    }
+
+    .card_content {
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+    .card_wrapper{
+        display: flex;
+        justify-content: center;
+        font-size: 11px;
+        
+        
+    }
+    .v_card .card_content p{
+        font-size: 14px;
+    }
+    .status{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 4px;
+        
+    }
+    .status .read_btn{
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    footer {
+        flex-direction: row; /* Stack footer content vertically */
+        align-items: center; /* Center align footer content */
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    footer ul {
+        gap: 0.5rem; /* Adjust gap between footer items for smaller screens */
+    }
+
+    footer ul li {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .post h1 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .post .bannerImg img {
+        height: auto; /* Ensure images within post adapt to smaller screens */
+    }
+}
+
+
+ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: aqua; */
+}
+html{
+    font-size: 62.5%;
+}
+html,body{
+    font-family: "Inter" , sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 1.4rem;
+}
+header{
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    
+
+}
+ul{
+    list-style: none;
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+    
+}
+nav ul li{
+    font-size: 1.8rem;
+}
+nav ul li:hover{
+    border-bottom: #e7ef07 2px solid;
+}
+nav i{
+    font-size: 2.5rem;
+}
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* hero section */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+.hero_content h1{
+    font-size: 6rem;
+    line-height: 1.2;
+    
+}
+.hero_content h4{
+    font-size: 2.4rem;
+    font-weight: 300;
+    
+}
+.hero_image img{
+    border-radius: 5rem;
+    height: 200px;
+    /* border: #000000 1px solid; */
+}
+/* long card */
+.h_card{
+    display: flex;
+    margin: 2rem 0rem;
+    box-shadow: 0px 5px 4px #c4bfbf;
+    align-items: center;
+    border: 1px solid #e2e2e2;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 1rem;
+    /* padding-right: 0.5rem; */
+    padding-left: 0.5rem;
+}
+.h_card  img{
+    height: 190px;
+    border-radius:1rem ;
+    
+}
+.card_content{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.status{
+    display: flex;
+    justify-content: space-between;
+}
+.read_btn{
+    all: unset;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+
+
+}
+.read_btn:hover{
+
+    /* border-bottom: 1px solid gray; */
+    box-shadow: 0px 2px 5px #c4bfbf;
+    
+}
+.status #date{
+    font-weight: 600;
+}
+.v_card  img{
+    height: 190px;
+    border-radius:1rem ;
+    width: 300px;
+    
+}
+
+.v_card{
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 320px;
+    box-shadow: 0px 5px 4px #c4bfbf;
+    align-items: center;
+    border: 1px solid #e2e2e2;
+    overflow: hidden;
+    padding: 1rem;
+    border-radius: 1rem;
+    /* padding-right: 0.5rem; */
+    
+}
+.card_container{
+    margin: 0 auto;
+    margin-bottom: 18px;
+    /* display: flex;
+    justify-content: space-around; */
+    display: grid;
+    
+     grid-template-columns: repeat(auto-fit , minmax(10px, 1fr)); 
+
+}
+.card_wrapper{
+    display: flex;
+    justify-content: center;
+    
+}
+.h_card .card_image4{
+    height: 420px;
+    margin: 8px 8px;
+}
+footer{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+footer ul{
+    display: flex;
+    gap: 2rem;
+}
+
+footer ul li{
+    font-size: 2.5rem;
+}
+
+.post h1{
+    font-size: 3rem;
+
+}
+.post .bannerImg img{
+    width: 100%;
+    height: 500px;
+    
+
+}
+.aboutAuthor{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 8px;
+}
+.post hr{
+    margin-bottom: 8px;
+}
+article{
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 6px;
+}
+.aboutAuthor p{
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ 
+
+
